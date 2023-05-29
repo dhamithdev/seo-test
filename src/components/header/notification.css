@@ -1,0 +1,116 @@
+.Notification {
+  width: 300px;
+  /* height: 400px; */
+
+  /* height: 500px; */
+  background: white;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin-top: 3px;
+  overflow-y: auto;
+  max-height: calc(100vh - 150px);
+  border: 0.3px solid lightgrey;
+
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+    0 9px 28px 8px rgb(0 0 0 / 5%);
+}
+
+.Notification-item {
+  width: 100%;
+  padding: 15px 10px;
+  margin-top: 3px;
+  border-radius: 5px;
+}
+.Notification-item:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+.Notification-Accepted:hover {
+  background: rgba(180, 191, 255, 0.15);
+}
+.Notification-Rejected:hover {
+  background: rgba(255, 180, 203, 0.15);
+}
+
+.Notification-heading {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin-bottom: 5px;
+}
+
+.Notification-invitation {
+  /* font-size: 14px; */
+  font-size: 14px;
+}
+
+.Notification-date {
+  width: 100%;
+  /* text-align: end; */
+  margin-top: 5px;
+  font-size: 10px;
+  color: silver;
+  /* padding: 0px 10px; */
+}
+
+.Notification-emp {
+  font-weight: 500;
+}
+
+.Notification-hr {
+  background: rgba(192, 192, 192, 0.781);
+  height: 1px;
+  width: 100%;
+  padding: 0px 15px;
+}
+
+.Notification-btn-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.Notification-btn {
+  width: 95%;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  cursor: pointer;
+  background: #2374e1;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+.Notification-btn:active {
+  transform: scale(1.03);
+}
+
+.Notification-btn-decline {
+  border: 1px solid #7b7b7ba6;
+  background: white;
+  color: black;
+}
+.Notification-btn-decline:hover {
+  color: crimson;
+  border: 1px solid crimson;
+}
+
+.Notification-status-message {
+  text-align: center;
+  padding: 8px 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid dodgerblue;
+  color: dodgerblue;
+}

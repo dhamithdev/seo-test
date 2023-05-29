@@ -1,0 +1,106 @@
+.TasksScreen {
+  width: 100%;
+  /* height: 100%; */
+  background: var(--backgroundColor);
+  padding: 40px 65px;
+}
+
+.TasksScreen-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(0, 0, 0, 0.39); */
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  height: calc(100vh - 130px);
+  width: 100%;
+
+  margin-top: 130px;
+}
+
+.TasksScreen-filterBar {
+  width: 100%;
+  height: 50px;
+  /* background: white; */
+  margin-bottom: 10px;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TasksScreen-filterBar svg {
+  font-size: 15px;
+}
+
+.TasksScreen-filterBar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.TasksScreen-filterBar-left div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  cursor: pointer;
+
+  padding: 8px 15px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid rgb(218, 218, 218);
+}
+.TasksScreen-filterBar-left div:hover {
+  background: rgba(256, 256, 256, 0.6);
+}
+
+/* .TasksScreen-filter-mytasks {
+} */
+.TasksScreen-filter-mytasks-active {
+  color: dodgerblue;
+  border: 1px solid dodgerblue !important;
+}
+
+.TasksScreen-sections {
+  width: 100%;
+  /* background: tomato; */
+}
+
+.TasksScreen-filterMenu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.TasksScreen-AddTaskButton {
+  padding: 7px 20px;
+  background: #4f46e5;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  cursor: pointer;
+}
+.TasksScreen-AddTaskButton:hover {
+  opacity: 0.9;
+}
+
+/* ------------------------------------------------------ */
+
+@media screen and (max-width: 650px) {
+  .TasksScreen {
+    width: 100%;
+    /* height: 100%; */
+    background: var(--backgroundColor);
+    padding: 20px 10px;
+  }
+}

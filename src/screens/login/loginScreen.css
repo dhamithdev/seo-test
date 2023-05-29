@@ -1,0 +1,154 @@
+.LoginScreen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgb(249, 250, 251);
+}
+
+.ls-container {
+  width: 450px;
+  /* height: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: violet; */
+}
+
+.ls-container img {
+  width: 203px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.ls-headline {
+  /* font-weight: 800; */
+  color: rgb(17, 24, 39);
+  font-size: 30px;
+  margin: 24px 0px 0px;
+}
+
+.ls-box {
+  margin-top: 25px;
+  width: 100%;
+  /* height: 300px; */
+  border-radius: 10px;
+  background: white;
+
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.02);
+
+  padding: 55px 40px 30px 40px;
+
+  position: relative;
+}
+
+.ls-container-loading {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background: rgba(256, 256, 256, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Login Error --- */
+.ls-container-error {
+  font-size: 18px;
+  font-weight: 600;
+  color: crimson;
+  margin-top: -30px;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.txt-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.txt-input-container input {
+  color: rgb(55, 65, 81);
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  /* border: 1px solid silver; */
+  font-size: 14px;
+  border: 1px solid #c5c7ca;
+  outline-color: #4f46e5;
+
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(43, 98, 250, 0.05);
+  -moz-box-shadow: 0px 0px 15px 2px rgba(43, 98, 250, 0.05);
+  box-shadow: 0px 0px 15px 2px rgba(43, 98, 250, 0.05);
+}
+
+.txt-input-container label {
+  color: #374152;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.txt-input-error {
+  color: crimson;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.ls-rememberMe {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.ls-rememberMe label {
+  color: #374152;
+  margin-left: 10px;
+}
+
+.ls-login {
+  background: #4f46e5;
+  color: white !important;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin-top: 24px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+
+  border: none;
+}
+
+.ls-login:hover {
+  color: white;
+}
+
+.ls-register {
+  width: 100%;
+  background: white;
+  color: #4f46e5;
+  text-align: center;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+}

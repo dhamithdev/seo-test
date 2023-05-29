@@ -1,0 +1,218 @@
+.TaskItem {
+  width: 100%;
+  /* background: palevioletred; */
+
+  border-top: 1px solid rgb(229, 231, 235);
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 16px 0px;
+}
+
+.TaskItem div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TaskItem-checkbox {
+  width: 7%;
+  /* background: slateblue; */
+
+  /* justify-content: flex-start !important; */
+}
+
+.TaskItem-name {
+  width: 61%;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 500;
+  /* background: violet; */
+
+  /* padding-right: 24px; */
+
+  justify-content: flex-start !important;
+}
+
+.TaskItem-name-Striked {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.TaskItem-priority {
+  width: 8%;
+  /* background: turquoise; */
+
+  user-select: none;
+  justify-content: flex-start !important;
+}
+.TaskItem-priority div {
+  background: #fef08a;
+  color: #ca8a04;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+.TaskItem-status {
+  width: 8%;
+  /* background: purple; */
+
+  justify-content: flex-start !important;
+}
+.TaskItem-status div {
+  font-size: 12px;
+  /* color: black; */
+}
+
+.TaskItem-Evaluation {
+  width: 8%;
+  /* background: purple; */
+
+  justify-content: flex-start !important;
+}
+
+.TaskItem-Evaluation div {
+  font-size: 12px;
+  /* color: black; */
+}
+
+.TaskItem-otherbtns {
+  width: 16%;
+  /* background: teal; */
+
+  justify-content: space-evenly !important;
+}
+.TaskItem-otherbtns svg {
+  font-size: 17px;
+  fill: #80848b;
+}
+
+/* ----------------- */
+
+.TaskItem-datepicker input {
+  visibility: hidden;
+  width: 0;
+}
+.TaskItem-datepicker {
+  padding: 0;
+  border: none;
+}
+
+.TaskItem-datepicker-set svg {
+  fill: crimson;
+  position: absolute;
+  left: 4px;
+  /* bottom: 1px; */
+  font-size: 21px !important;
+}
+
+/* ----------------- */
+
+.Status-overlay {
+  border-radius: 10px;
+}
+
+.Status-overlay li {
+  padding: 10px 100px 10px 20px;
+  font-size: 14px;
+  /* font-weight: 500; */
+  /* background: #000; */
+}
+
+.Evaluation-overlay {
+  border-radius: 10px;
+}
+
+.Evaluation-overlay li {
+  padding: 10px 40px 10px 20px;
+  font-size: 14px;
+  /* font-weight: 500; */
+  /* background: #000; */
+}
+
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 650px) {
+  .TaskItem {
+    padding: 13px 0px;
+  }
+
+  .TaskItem-otherbtns {
+    display: none !important;
+    /* background: turquoise; */
+  }
+
+  .TaskItem-checkbox {
+    width: 10%;
+    /* background: slateblue; */
+
+    /* justify-content: flex-start !important; */
+  }
+
+  .TaskItem-name {
+    width: 67%;
+    color: #4b5563;
+    font-size: 13px;
+    font-weight: 600;
+    /* background: violet; */
+
+    line-height: normal;
+
+    /* padding: 0px 5px; */
+
+    justify-content: flex-start !important;
+  }
+
+  .TaskItem-priority {
+    display: none !important;
+    /* width: 8%; */
+    /* background: turquoise; */
+
+    font-weight: 700;
+
+    justify-content: flex-start !important;
+  }
+
+  .TaskItem-status {
+    width: 23%;
+    overflow-x: hidden;
+
+    font-size: 5px !important;
+
+    /* background: purple; */
+    justify-content: center !important;
+  }
+
+  .TaskItem-Evaluation {
+    display: none !important ;
+  }
+}
+
+.taskItem-completed {
+  opacity: 0.6;
+}
+
+/* ----------------------- */
+
+:root {
+  /* --checkboxColor: #22c55e; */
+  /* --checkboxColor: rgb(9, 106, 202); */
+  --checkboxColor: dodgerblue;
+}
+
+.taskItem-completed .TaskItem-checkbox {
+  opacity: 1 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--checkboxColor);
+  border-color: var(--checkboxColor);
+  outline: var(--checkboxColor);
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--checkboxColor);
+  border-color: var(--checkboxColor);
+}

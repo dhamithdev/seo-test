@@ -1,0 +1,180 @@
+.UserProfile {
+  width: 100%;
+  height: max-content;
+  background: var(--backgroundColor);
+}
+
+.UserP-header {
+  width: 100%;
+  height: 49px;
+  background: white;
+
+  padding: 0px 6%;
+
+  display: flex;
+  align-items: center;
+
+  -webkit-box-shadow: 0px 0.5px 1px 1px rgba(227, 227, 227, 1);
+  -moz-box-shadow: 0px 0.5px 1px 1px rgba(227, 227, 227, 1);
+  box-shadow: 0px 0.5px 1px 1px rgba(227, 227, 227, 1);
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.UserP-box {
+  width: 100%;
+  /* height: 500px; */
+  /* background: turquoise; */
+
+  display: flex;
+  gap: 10px;
+
+  margin: 20px 0px;
+  padding: 25px 75px;
+
+  border-bottom: 1px solid rgba(211, 209, 209, 0.3);
+}
+
+.UserP-box-l {
+  width: 40%;
+  /* background: violet; */
+}
+.UserP-box-l div:first-child {
+  font-size: 18px;
+  color: #111827;
+}
+.UserP-box-l div:last-child {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.UserP-box-r {
+  width: 60%;
+  /* height: 300px; */
+  background: white;
+  border-radius: 10px;
+
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03), 0 2px 3px 0 rgba(0, 0, 0, 0.02);
+}
+
+.UserP-box-r-body {
+  padding: 25px;
+}
+
+.UserP-input-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  margin-bottom: 20px;
+}
+.UserP-input-container label {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 2px;
+}
+.UserP-input-container input {
+  color: rgb(55, 65, 81);
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+
+  padding: 7px 15px;
+
+  transition: all 0.1s ease-in-out;
+
+  border: 1px solid #dddddd;
+}
+.UserP-input-container input:focus {
+  box-shadow: 0 0 3px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+/* ******************* ******************* ******************* ******************* ******************* */
+
+.UserP-box-footer {
+  width: 100%;
+  background: #f9fafb;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 12px 24px;
+}
+
+.UserP-box-submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 16px;
+
+  color: white;
+  border-radius: 5px;
+  background: #1f2937;
+  cursor: pointer;
+
+  gap: 10px;
+}
+.UserP-box-submitBtn:hover {
+  opacity: 0.9;
+}
+
+/* Overide submit buttons display property */
+.UserP-box-submitBtn-delete {
+  display: inline-flex !important;
+}
+
+/* --------------------------------------------------------- */
+
+@media screen and (max-width: 650px) {
+  .UserP-box {
+    width: 100%;
+    flex-direction: column;
+    /* background: yellow; */
+
+    gap: 10px;
+
+    margin: 0px 0px;
+    padding: 25px 12px;
+  }
+
+  .UserP-box-l {
+    width: 100%;
+    /* background: #000; */
+    padding: 0px 10px;
+  }
+  .UserP-box-r {
+    width: 100%;
+  }
+  .UserP-box-r-body {
+    padding: 15px 15px;
+  }
+
+  .UserP-input-container {
+    width: 100%;
+  }
+}
+
+.profile-txt-input-error {
+  color: crimson;
+  font-size: 12px;
+}
+
+.userProfile-loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* height: calc(100vh - (var(--headerHeight) + 49)); */
+  background: rgba(255, 255, 255, 0.411);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

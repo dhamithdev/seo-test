@@ -1,0 +1,50 @@
+.AssignedUser {
+  max-width: 300px;
+  min-width: 230px;
+  height: 100%;
+
+  /* height: 500px; */
+  background: white;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+
+  /* padding: 15px 10px; */
+  border-radius: 10px;
+  max-width: 300px;
+  margin-top: 3px;
+  max-height: 65vh;
+  overflow-y: auto;
+  border: 0.3px solid lightgrey;
+
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+    0 9px 28px 8px rgb(0 0 0 / 5%);
+}
+
+.AssignedUser-item {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow-x: hidden;
+
+  padding: 10px 10px;
+  transition: all 0.1s ease-in-out;
+}
+.Unassigned:hover {
+  color: crimson;
+}
+.AssignedUser-item:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.AssignedUser-itemName {
+  font-size: 14px;
+  /* font-weight: 500; */
+}
+
+.AssignedUser-item-assigned {
+  color: purple;
+}

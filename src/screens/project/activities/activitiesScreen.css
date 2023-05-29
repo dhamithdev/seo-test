@@ -1,0 +1,68 @@
+.ActivitiesScreen {
+  width: 100%;
+  /* background: dodgerblue; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--headerHeight) - 66px);
+
+  padding: 35px 3%;
+}
+
+.ActivitiesScreen-box {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  overflow-y: auto;
+}
+
+.ActivitiesS-activity-heading {
+  font-size: 18px;
+}
+
+.ActivitiesScreen-loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.ActivitiesS-hr {
+  width: 100%;
+  height: 1px;
+  background: black;
+  opacity: 0.2;
+  margin: 15px 0px;
+}
+
+.ActivitiesS-activity-Item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  /* max-width: 80%; */
+  /* background: dodgerblue; */
+  color: #344151;
+}
+
+/* ---------------------------------------------------------- */
+
+@media screen and (max-width: 650px) {
+  .ActivitiesScreen {
+    padding: 15px 2%;
+  }
+
+  .ActivitiesS-up {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ActivitiesS-up-box {
+    width: 100%;
+  }
+}
